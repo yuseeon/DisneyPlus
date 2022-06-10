@@ -1,0 +1,126 @@
+:root {
+    --main-color: #01147A;
+    --text-color: #FEFEFE;
+    --background-color: #101745;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-size: 100%;
+    color: var(--text-color);
+}
+
+html, body {
+    height: 100%;
+}
+
+#main-header {
+    width: 100%;
+    background: #fff;
+}
+
+#main-header > nav {
+    position: absolute;
+    right: 130px;
+    top: 40px;
+    font-weight: 700;
+}
+
+#main-header > nav > ul > li {
+    display: inline-block;
+    margin-left: 5em;
+}
+
+.main {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: var(--background-color);
+}
+
+.main .col {
+    width: calc(100% / 4);
+    height: 100%;
+    background: #abc;
+    position: relative;
+}
+
+.main .col h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: var(--text-color);
+    padding: 1em;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: calc(50% - 109px / 2);
+}
+
+.main .col h2 span {
+    display: block;
+    font-size: large;
+    font-weight: bold;
+}
+
+.btn-link {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+    padding: 8px 25px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 150px;
+    left: calc(50% - 124px / 2);
+}
+
+.btn-lint:hover, .btn-link:active {
+    background: rgba(255, 255, 255, 0.75);
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+.main #section1 {
+    background-image: url(./image/disney1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main #section2{
+    background-image: url(./image/pixar.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main #section3{
+    background-image: url(./image/marvel.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main #section4{
+    background-image: url(./image/n_g.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#section1, #section2, #section3, #section4 {
+    float: left;
+}
